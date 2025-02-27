@@ -1,76 +1,92 @@
 # CS-305_Artemis-Financial
 SNHU CS-305 Software Security
 
-GitHub README Submission for CS-305 Module Eight Journal
-1. Client Overview and Software Requirements
+# CS-305: Practices for Secure Software  
+## Artemis Financial Security Assessment Report  
+**Author:** Emmalie Cole  
+**Course:** CS-305 Software Security  
+**Date:** February 2025  
 
-Artemis Financial is a financial services company that required an assessment of its web-based application to ensure compliance with secure software development practices. The company needed improved security for authentication, data integrity, and communication channels to protect sensitive client information from potential threats.
+---
 
-2. Strengths in Identifying Security Vulnerabilities & Importance of Secure Coding
-We successfully identified security vulnerabilities by:
+## Project Overview  
 
-    Conducting static security scans with OWASP Dependency Check to find risks in third-party dependencies.
-    Implementing SHA-256 hashing for data integrity verification.
-    Enforcing HTTPS with SSL/TLS encryption to secure data in transit.
+### Client: Artemis Financial  
+Artemis Financial is a financial services company that required a security assessment and refactoring of its web application to enhance security and ensure compliance with industry best practices.  
 
-Why Secure Coding Matters:
+### Objective  
+The goal of this project was to:  
+- Assess and identify software security vulnerabilities  
+- Implement strong authentication and encryption mechanisms  
+- Strengthen data integrity and secure communications  
+- Ensure compliance with secure software development best practices  
 
-    Protects confidential financial data from breaches.
-    Ensures compliance with industry security standards.
-    Builds client trust and system reliability.
+---
 
-3. Challenges & Insights from the Vulnerability Assessment
+## Security Enhancements Implemented  
 
-Challenges:
+| Security Measure | Description |
+|----------------------|----------------|
+| Secure Authentication | Configured authentication using Spring Security to restrict unauthorized access |
+| Cryptographic Hashing | Implemented SHA-256 hashing to ensure data integrity |
+| SSL/TLS Encryption | Enforced HTTPS communication for secure data transmission |
+| Vulnerability Scanning | Used OWASP Dependency Check to detect and mitigate risks in third-party libraries |
 
-    Configuring SSL/TLS certificates to enforce HTTPS securely.
-    Analyzing dependency vulnerabilities and deciding which updates were critical.
+These enhancements improve the confidentiality, integrity, and availability of Artemis Financial's application.
 
-Helpful Insights:
+---
 
-    Spring Security integration provided a structured way to enforce authentication.
-    Using OWASP guidelines helped prioritize and mitigate security risks efficiently.
+## Key Insights and Challenges  
 
-4. Increasing Layers of Security & Future Assessment Strategies
+### Strengths in Identifying Vulnerabilities  
+- Conducted static and dynamic security analysis  
+- Identified authentication flaws, weak encryption, and dependency risks  
+- Enforced secure data handling and communication practices  
 
-Security Enhancements Implemented:
+### Challenges Faced and Solutions  
+- **SSL/TLS Configuration:** Implemented self-signed certificates for HTTPS in a local environment  
+- **Dependency Security:** Resolved known vulnerabilities identified by OWASP Dependency Check  
+- **Refactoring Security Code:** Ensured minimal impact on application functionality  
 
-    Enforced authentication using Spring Security.
-    Implemented SHA-256 hashing for data integrity.
-    Configured SSL/TLS encryption to enable HTTPS.
-    Scanned dependencies for vulnerabilities using OWASP Dependency Check.
+---
 
-Future Strategies:
+## Testing and Validation  
 
-    Conduct regular vulnerability assessments with automated security tools.
-    Implement multi-factor authentication (MFA) for additional security layers.
+To verify the effectiveness of security enhancements, the following tests were conducted:  
 
-5. Ensuring Functional & Secure Code After Refactoring
+| Test Type | Purpose |
+|--------------|------------|
+| Unit Testing | Verified that security improvements did not break functionality |
+| Security Scanning | Performed vulnerability analysis using OWASP Dependency Check |
+| SSL/TLS Validation | Ensured secure HTTPS communication and certificate validity |
+| Authentication Testing | Confirmed Spring Security successfully restricts unauthorized access |
 
-To ensure security and functionality:
+All security enhancements were successfully tested, validated, and documented.
 
-    Performed unit testing after refactoring security features.
-    Verified HTTPS enforcement by checking secure login page deployment.
-    Reviewed application logs to detect any security warnings.
+---
 
-6. Tools, Resources & Best Practices for Future Use
+## Tools and Technologies Used  
 
-Tools Used:
+| Tool | Purpose |
+|----------|------------|
+| OWASP Dependency Check | Identified and mitigated security vulnerabilities in third-party dependencies |
+| Java Keytool | Generated self-signed SSL/TLS certificates for HTTPS configuration |
+| Spring Security | Enforced authentication and access control |
+| Postman | Tested secure API authentication and HTTPS enforcement |
 
-    OWASP Dependency Check – Identified third-party security risks.
-    Java Keytool – Created and installed SSL/TLS certificates.
-    Spring Security – Enforced authentication and secure access control.
+These tools ensured a thorough security assessment and implementation.
 
-Best Practices Applied:
+---
 
-    Encrypt data in transit with HTTPS.
-    Use secure hashing algorithms for data integrity verification.
-    Scan dependencies regularly to mitigate known security flaws.
+## Portfolio and Employer Showcase  
 
-7. Showcasing Work to Future Employers
+This project demonstrates:  
+- Real-world secure software development skills  
+- Ability to assess, identify, and mitigate security vulnerabilities  
+- Proficiency in cryptographic hashing, authentication, and secure communication  
 
-For potential employers, I would highlight:
+### Artifacts for Portfolio Submission  
+- Practices for Secure Software Report (Project Two)  
+- Screenshots of HTTPS security, SHA-256 hashing, and vulnerability scans  
 
-    The security report detailing vulnerability assessment and fixes.
-    The refactored code with security improvements.
-    Screenshots demonstrating HTTPS, SHA-256 hashing, and security testing results.
+These documents provide concrete examples of secure coding practices for future employers.
